@@ -1,12 +1,10 @@
-How to Run These Exercises
+How to Run These Exercises:
 
-    Save each exercise in a .ts file.
+    1. Save each exercise in a .ts file.
 
-    Run with:
-    bash
-    Copy
+    2. Run with:
 
-    tsc filename.ts --target es6 --strict
-    node filename.js
+        $ tsc filename.ts --target es6 --strict
+        $ node filename.js
 
-    Fix any TypeScript errors until the code runs correctly.
+    3. Fix any TypeScript errors until the code runs correctly.
