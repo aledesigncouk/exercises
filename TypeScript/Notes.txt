@@ -1,0 +1,12 @@
+How to Run These Exercises
+
+    Save each exercise in a .ts file.
+
+    Run with:
+    bash
+    Copy
+
+    tsc filename.ts --target es6 --strict
+    node filename.js
+
+    Fix any TypeScript errors until the code runs correctly.

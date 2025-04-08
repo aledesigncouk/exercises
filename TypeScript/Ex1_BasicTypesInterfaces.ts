@@ -4,7 +4,7 @@ Problem: Create a Person interface and a function that greets a person.*/
 
 // Complete the Person interface and the greet function
 interface Person {
-    // Add properties here
+  // Implement this interface
   }
   
   function greet(person: Person): string {
