@@ -12,7 +12,8 @@ Tasks:
 
 function mergeArrays<T>(arr1: T[], arr2: T[]): T[] {
     // Implement this function
-    return [];
+    // return arr1.concat(arr2);
+    return [...arr1, ...arr2];
   }
   
   // Test cases

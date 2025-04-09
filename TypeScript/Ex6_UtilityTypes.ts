@@ -12,16 +12,16 @@ B Make the returned object Readonly<Config>.
 
 
 interface Config {
-    id: number;
-    name: string;
-    enabled: boolean;
-  }
-  
-  function updateConfig(current: Config, changes: /* ? */): Config {
-    return { ...current, ...changes };
-  }
-  
-  // Test case
-  const config: Config = { id: 1, name: "App", enabled: true };
-  const updated = updateConfig(config, { enabled: false }); // Should work
-  // updated.name = "New Name"; // Should cause a TS error (readonly)
+  id: number;
+  name: string;
+  enabled: boolean;
+}
+
+function updateConfig(current: Config, changes: Partial<Config>): Readonly<Config> {
+  return { ...current, ...changes };
+}
+
+// Test case
+const config: Config = { id: 1, name: "App", enabled: true };
+const updated = updateConfig(config, { enabled: false }); // Should work
+// updated.name = "New Name"; // Should cause a TS error (readonly)

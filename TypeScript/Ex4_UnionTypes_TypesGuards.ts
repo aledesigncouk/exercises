@@ -14,7 +14,7 @@ type StringOrNumber = string | number;
 
 function processData(input: StringOrNumber): string {
   // Use a type guard to handle both string and number cases
-  if (/* ? */) {
+  if (typeof input === "string") {
     return input.toUpperCase();
   } else {
     return input.toFixed(2);
